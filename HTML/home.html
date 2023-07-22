@@ -1,84 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shopping Cart</title>
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="../CSS/home.css">
-</head>
-
-<body>
-  <!-- -----header------- -->
-  <header>
-    <nav>
-      <h2>Shopping Cart</h2>
-      <i class="bx bxs-shopping-bag"></i>
-    </nav>
-  </header>
- 
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../CSS/home.css">
+    <script src="../JS/app.js" async></script>
+    <title>Shopping Cart</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h2>Shopping Cart</h2>
+        <i class="bx bxs-shopping-bag"></i>
+      </nav>
+    </header>
     <div>
       <h2 class="heading">Bagpacks</h2><br>
     </div>
-    <section>
-        
-    <div class="item">
-      <img src="../images/wildcraft.png" alt="" />
-      <h3>Wildcraft bag</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-      <h4>₹800</h4>
-      </div>
-      <div class="item">
-        <img src="../images/skybag.png" alt="" />
-        <h3>Skybag</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-        <h4>₹900</h4>
+    <section class="container">
+      <div class="container-items">
+        <div class="item p-2">
+          <span class="total-item">ADIDAS</span>
+          <img src="../IMAGES/adidas.png" alt="not found" class="img-item">
+          <span class="product-item">₹1,200</span>
+          <button class="button-item">Add to Cart</button>
         </div>
-        <div class="item">
-          <img src="../images/adidas.png" alt="" />
-          <h3>Adidas bag</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-          <h4>₹850</h4>
+        <div class="item p-2">
+          <span class="total-item">AMERICAN TOURISTER</span>
+          <img src="../IMAGES/americantour.png" alt="not found" class="img-item">
+          <span class="product-item">₹900</span>
+          <button class="button-item">Add to Cart</button>
+        </div>
+        <div class="item p-2">
+          <span class="total-item">BAG</span>
+          <img src="../IMAGES/bag.png" alt="not found" class="img-item">
+          <span class="product-item">₹850</span>
+          <button class="button-item">Add to Cart</button>
+        </div>
+        <div class="item p-2">
+          <span class="total-item">FASTRACK</span>
+          <img src="../IMAGES/fastrack.png" alt="not found" class="img-item">
+          <span class="product-item">₹940</span>
+          <button class="button-item">Add to Cart</button>
+        </div>
+        <div class="item p-2">
+          <span class="total-item">FGEAR</span>
+          <img src="../IMAGES/FGear.png" alt="not found" class="img-item">
+          <span class="product-item">₹850</span>
+          <button class="button-item">Add to Cart</button>
+        </div>
+        <div class="item p-2">
+          <span class="total-item">NIKE</span>
+          <img src="../IMAGES/nike.png" alt="not found" class="img-item">
+          <span class="product-item">₹900</span>
+          <button class="button-item">Add to Cart</button>
+        </div>
+        <div class="item p-2">
+          <span class="total-item">PUMA</span>
+          <img src="../IMAGES/puma.png" alt="not found" class="img-item">
+          <span class="product-item">₹680</span>
+          <button class="button-item">Add to Cart</button>
+        </div>
+        <div class="item p-2">
+          <span class="total-item">SKYBAG</span>
+          <img src="../IMAGES/skybag.png" alt="not found" class="img-item">
+          <span class="product-item">₹600</span>
+          <button class="button-item">Add to Cart</button>
+        </div>
+        <div class="item p-2">
+          <span class="total-item">TOMMY HILFIGER</span>
+          <img src="../IMAGES/TommyHilfiger.png" alt="not found" class="img-item">
+          <span class="product-item">₹750</span>
+          <button class="button-item">Add to Cart</button>
+        </div>
+        <div class="item p-2">
+          <span class="total-item">WILDCRAFT</span>
+          <img src="../IMAGES/wildcraft.jpg" alt="not found" class="img-item">
+          <span class="product-item">₹1,100</span>
+          <button class="button-item">Add to Cart</button>
+        </div>
+        <div class="item p-2">
+          <span class="total-item">WILDCRAFT ADV</span>
+          <img src="../IMAGES/wildcraft.png" alt="not found" class="img-item">
+          <span class="product-item">₹600</span>
+          <button class="button-item">Add to Cart</button>
+        </div>
+      </div>
+      <div class="cart" id="cart">
+        <div class="header-cart">
+          <h2>Cart Details</h2>
+        </div>
+        <div class="cart-items">
+        </div>
+        <div class="cart-total">
+          <div class="fila">
+            <strong> Total</strong>
+            <span class="cart-precio-total">
+              $120.000,00
+            </span>
           </div>
-          <div class="item">
-            <img src="../images/nike.png" alt="" />
-            <h3>Nike bag</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-            <h4>750</h4>
-          </div>
-            <div class="item">
-              <img src="../images/fastrack.png" alt="" />
-              <h3>PFastrack bag</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-              <h4>₹700</h4>
-              </div>
-              <div class="item">
-                <img src="../images/FGear.png" alt="" />
-                <h3>F Gear bag</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                <h4>₹650</h4>
-                </div>
-                <div class="item">
-                  <img src="../images/puma.png" alt="" />
-                  <h3>Puma bag</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                  <h4>₹600</h4>
-                  </div>
-                  <div class="item">
-                    <img src="../images/americantour.png" alt="" />
-                    <h3>American Tourister bag</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                    <h4>₹500</h4>
-                  </div>
-                  <div class="item">
-                    <img src="../images/TommyHilfiger.png" alt="" />
-                    <h3>Tommy Hilfiger bag</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                    <h4>₹690</h4>
-                  </div>
-               
-  </section>
-</body>
-
+          <button class="btn-pagar">Order Now<i class="fa-solid fa-bag-shopping"></i> </button>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
